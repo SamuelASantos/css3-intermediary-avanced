@@ -1,0 +1,40 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+    float: left;
+}
+li {
+    background: orange;
+    border-top-left-radius: 10px; /* border-radius: -> Usado para criar bordas arredondadas */
+    border-top-right-radius: 10px;
+    float: left;
+    border: 1px solid #FE9A2E;
+    border-bottom: none;
+}
+li a {
+    display: block;
+    text-decoration: none;
+    float: left;
+    color: #fff;
+    padding: 0 2em;
+    line-height: 2.2em;
+}
+li a:hover {
+    color: black;
+    background: yellow;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#home #navegacao .home a,
+#contato #navegacao .contato a,
+#noticias #navegacao .noticias a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a {
+    color: black;
+    background: yellow;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
