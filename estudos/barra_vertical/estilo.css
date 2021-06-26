@@ -1,0 +1,32 @@
+ul {
+    list-style-type: none; /* Define se a lista criada é ordenada ou desordenada 
+                                none → Retirar a formatação da lista */
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+li a {
+    height: 40px;
+    display: block;
+    background: #f7b600 url("../../estudos/imagens/menu.png") no-repeat left bottom;
+    text-decoration: none;
+    color: black;
+    text-indent: 40px; /* text-indent: → Similar ao padding mas é dado um espaço a esquerda (Indentação do texto) */
+    line-height: 40px; /* line-height: → Define a altura da linha que está o texto */
+}
+li a:hover {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: white;
+}
+
+/* Seleciona a formatação via CSS. Em cada página deve colocar a estrutura*/
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a,
+#contato #navegacao .contato a {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: white;
+}
