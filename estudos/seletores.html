@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+        * { /* Seletor universal -> Aplica-se a todos os elementos no documento */
+            margin: 0;
+        }
+        h1 { /* Seletor de texto -> Seleciona elementos pelo tipo */
+            color: green;
+        }
+        .azul { /* Seletor de Classe -> Seleciona um elemento cujo atributo class tem o valor especificado depois do ponto */
+            color: blue;
+        }
+        p.verde { /* Seletor de Classe -> Seleciona apenas elemento<p> cujo atributo class tem o valor "verde" */
+            color: green;
+        }
+        #roxo { /* Seletor de Id -> Seleciona um elemento cujo atributo id tem o valor especificado após o símbolo de cerquilha ou jogo da velha */
+            color: purple;
+        }
+        li>a { /* Seletor de Filho -> Seleciona um elemento que é filho DIRETO de outro */
+            color: red;
+            text-decoration: none;
+        }
+        p a { /* Seletor de Descendente -> Seleciona um elemento que é descendente de outro elemento especificado (e não apenas filho direto desse elemento)*/
+            color: aqua;
+        }
+        h1+p { /* Seletor de Irmão Adjacente -> Seleciona um elemento que é o irmão próximo de outro*/
+            color: brown;
+        }
+        h1~span { /* Seletor de Irmão Geral -> Seleciona um elemento que é um irmão de outro, embora ele não precise ser o elemento diretamente precedente */
+            color: cornflowerblue;
+        }
+    </style>
+
+    <title>Seletores</title>
+</head>
+<body>
+    <h1>Seletores</h1>
+    <h2 class="azul">Classe azul</h2>
+    <p class="verde">Parágrafo verde</p>
+    <h2 class="verde">H2 com classe verde</h2> <!-- O elemento H2 não foi aplicado CSS, mesmo contendo a mesma classe do elemento <p> -->
+    <h2 id="roxo">Id roxo</h2>
+    <ul>
+        <li> <a href="">Com seletor de filho</a> </li>
+        <li> <span><a href="">Sem seletor de filho</a></span> </li>
+    </ul>
+    <p>
+        <a href="">Seletor de descendente</a>
+    </p>
+    <h1>Seletores irmãos</h1>
+    <p>Seletor de irmão adjacente</p>
+    <p>Esse p não é irmão adjacente de h1</p>
+    <div>
+        <h1>Seletor de irmão geral</h1>
+        <span>Irmão geral</span><br/>
+        <span>Irmão geral</span>
+        <p><span>Não irmão</span></p>
+    </div>
+</body>
+</html>
