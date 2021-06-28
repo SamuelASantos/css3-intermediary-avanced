@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface de autentificação</title>
+
+    <style type="text/css">
+        body {
+            background: #643d87;
+        }
+        .fundo {
+            width: 30em;
+            height: 17em;
+            background-color: rgba(255, 255, 255, 0.3); /* Além de adicionar as cores, adiciona efeito de transparência */
+            margin: 100px auto;
+            border-radius: 10px; /* Deixa as bordas arredondadas */
+            text-align: center;
+        }
+        .fundo img {
+            margin-top: -4em;
+        }
+        input {
+            height: 40px;
+            width: 80%;
+            font-size: 18px;
+            margin: 10px auto;
+            padding-left: 40px;
+            border: none;
+            display: block;
+            border-radius: 10px;
+        }
+        input:focus { /* Formata as marcações do input */
+            box-shadow: 0 0 0 0; /* Retira as sombras */
+            outline: 0; /* Retira os contornos */
+        }
+        input[type="email"] {
+            background: #fff url("imagens/icone-usuario.png") no-repeat;
+            background-position: 10px;
+        }
+        input[type="password"] {
+            background: #fff url("imagens/icone-cadeado.png") no-repeat;
+            background-position: 10px;
+        }
+        input[type="submit"] {
+            background-color: #f79300;
+            border: 2px solid #db7d00;
+            padding: 5px 20px;
+            height: 45px;
+            width: 90%;
+            background: -webkit-linear-gradient(to bottom, #faa600, #f68a00);
+            background: -moz-linear-gradient(to bottom, #faa600, #f68a00);
+            background: -o-linear-gradient(to bottom, #faa600, #f68a00);
+            background: linear-gradient(to bottom, #faa600, #f68a00); /* Efeito de gradiente */
+            cursor: pointer;
+        }
+        input[type="submit"]:active {
+            background: #db7d00;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="fundo">
+        <img src="imagens/perfil.png">
+        <form action="">
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+            <input type="submit" value="Logar">
+        </form>
+    </div>
+    
+</body>
+</html>
