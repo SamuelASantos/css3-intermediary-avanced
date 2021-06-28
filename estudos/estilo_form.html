@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando Tabelas</title>
+
+    <style type="text/css">
+        form {
+            max-width: 25em;
+        }
+        fieldset {
+            border: 1px solid #ccc; 
+            background: #f8f8f8;
+            margin-bottom: 2em;   
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+           display: block;
+           cursor: pointer; /* cursor: → Maneira em que o cursor do mouse irá aparecer 
+                                pointer → ao passar o mouse por cima aparecer uma mão */
+        }
+        input[type="text"] {
+            margin: 0.4em 0;
+            width: 25em;
+        }
+        textarea {
+            width: 25em;
+            height: 10em;
+        }
+        input[type="radio"] {
+            margin-right: 0.5em;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Estilizando Formulários</h2>
+    <form action="">
+        <fieldset> <!-- <fieldset></fieldset> → Tag html que agrupa dados semelhantes -->
+            <legend>Detalhes Contato</legend> <!--<legend></legend> → Legenda do grupo de dados semelhantes -->
+            <label for="nome">Nome:</label> <!-- <label></label> → Identifica as caixas inputs criadas 
+                                                for: → Propriedade que associa o label a um input. Como valor, colocar nome ID do input. Recurso importante para acessibilidade. Ao clicar na label, marcará automaticamente o input associado -->
+            <input type="text" name="nome" id="nome">
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" id="email">
+            <label for="url">URL:</label>
+            <input type="text" name="url" id="url">
+        </fieldset>
+        <fieldset>
+            <legend>Comentários</legend>
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Lembrar de mim</legend>
+            <label>
+                <input type="radio" name="lembrar" id="sim">Sim
+            </label>
+            <label>
+                <input type="radio" name="lembrar" id="não">Não
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>
