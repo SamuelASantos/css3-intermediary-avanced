@@ -1,3 +1,4 @@
+/* CONFIGURAÇÕES GERAIS */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,19 @@ body {
     width: 750px;
     margin: 0 auto;
 }
+body.home a#home,
+body.brasil a#brasil,
+body.internacional a#internacional,
+body.economia a#economia,
+body.saude a#saude,
+body.ciencia a#ciencia,
+body.fotos a#fotos {
+    color: #fff;   
+    background: #de003e; 
+    cursor: text;
+}
+
+/* CONFIGURAÇÕES DO TOPO */
 #topo {
     height: 150px;
     background: url('imagens/detalhe-topo.png') no-repeat right top;
@@ -48,14 +62,46 @@ ul.menu-topo a.primeiro {
 ul.menu-topo a:hover {
     color: #69001d;
 }
-body.home a#home,
-body.brasil a#brasil,
-body.internacional a#internacional,
-body.economia a#economia,
-body.saude a#saude,
-body.ciencia a#ciencia,
-body.fotos a#fotos {
-    color: #fff;   
-    background: #de003e; 
-    cursor: text;
+
+/* CONFIGURAÇÃO DO LAYOUT DE TRÊS COLUNAS */
+#conteudo {
+    margin-top: 60px;
+    background: #f5f5f5;
+}
+#conteudo-principal {
+    width: 570px;
+    float: right;
+    margin-bottom: 10px;
+}
+#primario {
+    width: 270px;
+    float: left;
+    margin-left: 15px;
+    background-color: red;
+}
+#secundario {
+    width: 270px;
+    float: left;
+    margin-left: 15px;
+    background-color: green;
+}
+#lateral {
+    width: 180px;
+    float: left;
+    margin-bottom: 10px;
+    background-color: blue;
+    /* border: 1px solid red; */
+}
+
+/* CONFIGURAÇÃO DO RODAPÉ */
+#container-rodape {
+    clear: both;
+    background: #294c71;
+    padding: 20px;
+}
+#rodape {
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
 }
