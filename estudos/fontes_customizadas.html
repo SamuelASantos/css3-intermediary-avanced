@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando fontes customizadas</title>
+
+    <style type="text/css">
+        @font-face { /* @font-face {} → Define uma fonte customizada */
+            font-family: "Font Test"; /* font-family: → Define nome da fonte. OBS: Caso o nome escolhido tiver 2 ou mais nomes, colocar dentro de aspas. Caso seja apenas 1, não há necessidade */
+            src: url("fonts/SpeedWritten.woff"); /* src: → Informa o local onde está a fonte baixada (woff) 
+                                                        - url("") → Local da fonte */
+        }
+        h1 {
+            font-size: 6em;
+            font-family: "Font Test"; /* Agora basta usar a font */
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes Customizadas</h1>
+</body>
+</html>
