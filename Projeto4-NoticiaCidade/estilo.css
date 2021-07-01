@@ -154,6 +154,28 @@ input.submit {
     border: 2px solid #870529;
 }
 
+/* FORMATANDO IMAGENS */
+img.imagem-principal {
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+
+/* FORMATANDO CABEÇALHOS */
+h3 {
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+.destaque h3 {
+    background: #b10333;
+    color: #fff;
+}
+.entrevista h3 {
+    background: #de003e;
+    color: #ccc;
+}
+
 /* CONFIGURAÇÃO DO RODAPÉ */
 #container-rodape {
     clear: both;
